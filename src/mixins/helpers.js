@@ -46,6 +46,9 @@ var helpers = {
     // pause slider if autoplay is set to false
     if(!props.autoplay)
       this.pause();
+    else{
+      this.autoplay();
+    }
 
     this.setState({
       slideCount: slideCount,

@@ -786,7 +786,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var slideWidth = this.getWidth(_reactDom2.default.findDOMNode(this)) / props.slidesToShow;
 
 	    // pause slider if autoplay is set to false
-	    if (!props.autoplay) this.pause();
+	    if (!props.autoplay) this.pause();else {
+	      this.autoplay();
+	    }
 
 	    this.setState({
 	      slideCount: slideCount,
